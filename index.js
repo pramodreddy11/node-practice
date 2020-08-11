@@ -10,6 +10,9 @@ app.get("/", (req, res) => {
 app.get("/sampledata", (req, res) => {
   res.send(sampleData);
 });
+app.get("/hello", (req, res) => {
+  res.send("hello");
+});
 app.use(cors());
 app.listen(constants.port, () => {
   console.log("server up and running");
